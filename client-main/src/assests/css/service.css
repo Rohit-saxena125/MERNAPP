@@ -1,0 +1,15 @@
+.text-center {
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:2rem;
+}
+.ics{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20%;
+}
