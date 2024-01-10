@@ -19,7 +19,7 @@ const AdminUpdteUser = () => {
     e.preventDefault();
     try {
       const response = await axios.patch(
-        `http://localhost:9000/api/admin/users/update/${params.id}`,
+        `https://mern-server-27se.onrender.com/api/admin/users/update/${params.id}`,
         user,
         {
           headers: {
@@ -39,7 +39,7 @@ const AdminUpdteUser = () => {
   const getuserdata = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:9000/api/admin/users/${params.id}`,
+        `https://mern-server-27se.onrender.com/api/admin/users/${params.id}`,
         {
           headers: {
             Authorization: authorization,
