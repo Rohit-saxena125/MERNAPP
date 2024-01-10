@@ -23,7 +23,7 @@ const LoginCard = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:9000/api/v2/login",
+        "https://mern-server-27se.onrender.com/api/v2/login",
         user,
         {
           headers: {
