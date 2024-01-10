@@ -11,7 +11,7 @@ const AdminUser = () => {
   const getAllData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:9000/api/admin/users",
+        "https://mern-server-27se.onrender.com/api/admin/users",
         {
           headers: {
             Authorization: authorization,
@@ -32,7 +32,7 @@ const AdminUser = () => {
   }, []);
   const Deletedata = async (id) => {
     try{
-        const response = await axios.delete(`http://localhost:9000/api/admin/users/delete/${id}`,{
+        const response = await axios.delete(`https://mern-server-27se.onrender.com/api/admin/users/delete/${id}`,{
             headers: {
             Authorization: authorization,
             },
