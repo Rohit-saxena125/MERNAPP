@@ -23,7 +23,7 @@ const Contact = () => {
   const handleContactForm = async (e) => {
     e.preventDefault();
     try{
-        const  res = await axios.post("http://localhost:9000/api/form/contact",
+        const  res = await axios.post("https://mern-server-27se.onrender.com/api/form/contact",
         data,{
           headers: {
             "Content-Type": "application/json",
