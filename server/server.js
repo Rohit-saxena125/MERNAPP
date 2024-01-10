@@ -14,7 +14,7 @@ const admin = require("./Routes/admin-route");
 const errormiddleware = require("./middleware/errormiddleware");
 app.use(cors(
     {
-        origin: "http://localhost:3003",
+        origin: "https://mern-frontend-vwm2.onrender.com",
         methods: ["GET", "POST", "PATCH", "DELETE"],
         credentials: true,
     }
