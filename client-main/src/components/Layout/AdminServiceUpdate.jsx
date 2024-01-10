@@ -22,7 +22,7 @@ const AdminServiceUpdate = () => {
     e.preventDefault();
     try {
       const response = await axios.patch(
-        `http://localhost:9000/api/admin/services/update/${params.id}`,
+        `https://mern-server-27se.onrender.com/api/admin/services/update/${params.id}`,
         service,
         {
           headers: {
@@ -42,7 +42,7 @@ const AdminServiceUpdate = () => {
     const getservicedata = async () => {
     try {
         const response = await axios.get(
-        `http://localhost:9000/api/admin/services/${params.id}`,
+        `https://mern-server-27se.onrender.com/api/admin/services/${params.id}`,
         {
             headers: {
             Authorization: authorization,
