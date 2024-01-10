@@ -15,7 +15,7 @@ export const  AuthProvider = ({children}) => {
     const userAuthnticate = async () => {
         setLoading(true);
         try{
-            const response = await axios.get("http://localhost:9000/api/v2/user",{
+            const response = await axios.get("https://mern-server-27se.onrender.com/api/v2/user",{
                 headers:{
                     Authorization: authorization
                 }
@@ -36,7 +36,7 @@ export const  AuthProvider = ({children}) => {
     }
     const getservicedata = async () => {
         try{
-            const response = await axios.get("http://localhost:9000/api/data/service");
+            const response = await axios.get("https://mern-server-27se.onrender.com/api/data/service");
             if(response.status === 200)
             {
                 const data = await response.data.service;
