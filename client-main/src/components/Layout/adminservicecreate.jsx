@@ -19,7 +19,7 @@ const AdminCreate = () => {
         e.preventDefault();
         try {
             const res = await axios.post(
-                "http://localhost:9000/api/admin/services/create",service,
+                "https://mern-server-27se.onrender.com/api/admin/services/create",service,
                 {
                     headers: {
                         "Content-Type": "application/json",
