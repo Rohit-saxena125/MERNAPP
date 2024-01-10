@@ -14,7 +14,7 @@ const AdminService = () => {
   const getAllCard = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:9000/api/admin/services",
+        "https://mern-server-27se.onrender.com/api/admin/services",
         {
           headers: {
             Authorization: authorization,
@@ -33,7 +33,7 @@ const AdminService = () => {
   const deleteCard = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:9000/api/admin/services/delete/${id}`,
+        `https://mern-server-27se.onrender.com/api/admin/services/delete/${id}`,
         {
           headers: {
             Authorization: authorization,
