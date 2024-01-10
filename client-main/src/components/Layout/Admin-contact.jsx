@@ -8,7 +8,7 @@ const AdminContact = () => {
   const [contact , setContact] = useState([]);
     const getContactData = async () => {
         try{
-            const response = await axios.get("http://localhost:9000/api/admin/contact",{
+            const response = await axios.get("https://mern-server-27se.onrender.com/api/admin/contact",{
                 headers: {
                 Authorization: authorization,
                 },
@@ -27,7 +27,7 @@ const AdminContact = () => {
     };
     const Deletedata = async (id) => {
         try{
-            const response = await axios.delete(`http://localhost:9000/api/admin/contact/delete/${id}`,{
+            const response = await axios.delete(`https://mern-server-27se.onrender.com/api/admin/contact/delete/${id}`,{
                 headers: {
                 Authorization: authorization,
                 },
