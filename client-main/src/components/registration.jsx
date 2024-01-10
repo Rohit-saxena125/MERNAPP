@@ -24,7 +24,7 @@ const Registration = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:9000/api/v2/register",user,
+        "https://mern-server-27se.onrender.com/api/v2/register",user,
         {
           headers: {
             "Content-Type": "application/json",
